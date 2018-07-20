@@ -1,0 +1,1313 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.desplazarArriba{
+	position: fixed;
+	cursor: pointer;
+	bottom: 35px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background: #28B8D5;
+	transition: all 0.4s;
+	font-size: 30px;
+	text-align: center;
+	color: rgb(255,255,255, 0.6);
+	padding-top: 13px;
+}
+
+.desplazarArriba:hover{
+	background: #239FB8;
+	transition: all 0.4s;
+	color: rgb(255,255,255, 1);
+}
+
+/* ********************************************HEADER******************************************** */
+
+#headerMenu {
+	height: 50px;
+	position: absolute;
+	width: 300px;
+	top: 27%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-900%);
+}
+
+#headerMenuLabel{
+	position: absolute;
+	font-size: 40px;
+	color: rgba(255,255,255, 1);
+	display: block;
+	top: 10%;
+	right: 3.5%;
+	text-shadow: 0 0 3px #000;
+	cursor: pointer;
+}
+
+#checkboxMenu{
+	display: none;
+}
+
+#headerMenuLabel:hover{
+	color: rgba(255,255,255, 0.9);
+	transition: all 1s;
+}
+
+#checkboxMenu:checked ~ #headerMenu{
+	transform: translateY(0%) translateX(-50%);
+	transition: all 0.4s;
+}
+
+.contenedorNav ul{
+	list-style: none;
+}
+
+.contenedorNav ul li{
+	background: rgba(0,0,0, 0.85);
+	height: 50px;
+	box-shadow: 0 0 0 3px #fff;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contenedorNav a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#contenedorSlider h1{
+	position: absolute;
+	top: 5%;
+	left: 2%;
+	color: white;
+	font-size: 50px;
+	text-shadow:  0 0 1px #000;
+	transition: all 0.4s;
+}
+
+h1{
+	font-family: 'Amatic SC', cursive;
+}
+
+
+/* ********************************************SLIDER******************************************** */
+
+
+#contenedorSlider{
+	width: 100%;
+	max-height: 800px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#slider{
+	display: flex;
+	width: 600%;
+}
+
+#slider section{
+	width: 100%;
+}
+
+#slider section img{
+	width: 100%;
+}
+
+#bAtras, #bAdelante{
+	font-size: 180%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	text-shadow: 0 0 15px #000;
+	transition: all 0.7s;
+}
+
+#bAtras:hover, #bAdelante:hover{
+	color: rgba(255,255,255, 0.5);
+	transition: all 0.7s;
+}
+
+#bAtras{
+	left: 10%;
+}
+
+#bAdelante{
+	right: 10%;
+}
+
+
+#Pause{
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+	font-size: 30px;
+	position: absolute;
+	top: 77%;
+	left: 50%;
+	cursor: pointer;
+	transform: translateX(-50%) translateY(-50%);
+	transition: all 0.7s;
+}
+
+#Pause:hover{
+	color: rgba(255,255,255, 0.5);
+	transition: all 0.7s;
+}
+
+#conjuntoPuntos{
+	position: absolute;
+	top: 90%;
+	display: flex;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+
+.puntos{
+	border-radius: 50%;
+	border: 2px solid #EEEEEE;
+	width: 13px;
+	height: 13px;
+	transition: all 1.5s;
+	margin: 3px;
+	box-shadow: 0 0 8px #000;
+}
+
+.puntoAnimate{
+	border-radius: 0px;
+	border: 2px solid #239FB8;
+	transition: all 1.5s;
+}
+
+
+/* ********************************************SECTIONS******************************************** */
+
+
+.formularioLStorage{
+	display: none;
+	background: #C9ECF3;
+	top: 10px;
+	float: right;
+	padding: 10px;
+	margin: 10px 5% 0 0;
+}
+
+#logout{
+	float: right;
+	margin-top: 3px;
+}
+
+#verMas{
+	background: #F8F8F8;
+	width: 30%;
+	margin: 25px auto;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	box-shadow: 0 0 0 1px #B3B3B3;
+	transition: all 0.1s;
+	cursor: pointer;
+}
+
+#pLeerMás{
+	font-size: 17px;
+}
+
+
+.contenedorGeneral h1{
+	color: #A2D2DC;
+	transition: 0.5s all;
+}
+
+.pViajes p{
+	padding: 30px 0px 30px 0px;
+}
+
+.pViajesNav{
+	position: absolute;
+	width: 70%;
+	background: rgba(255,255,255, 0.8);
+	border: 1px solid #000;
+	margin-left: -600px;
+	transition: 0.5s all;
+}
+
+#inputNavViajes{
+	display: none;
+}
+
+#inputNavViajes:checked ~ .pViajesNav{
+	margin-left: 0px;
+	transition: 0.5s all;
+}
+
+.labelNavViajes{
+	color: #28B8D5;
+	font-size: 50px;
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+	transition:  ease 0.3s;
+}
+
+.labelNavViajes:hover{
+	color: #239FB8;
+	transition:  ease 0.3s;
+}
+
+.pViajesNav ul{
+	text-align: center;
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.pViajesNav li{
+	cursor:pointer;
+	height: 30px;
+	line-height: 30px;
+	background: #28B8D5; 
+	margin: 20px;
+	transition:  ease 0.3s;
+}
+
+.pViajesNav li:hover{
+	background: #239FB8;
+	transition:  ease 0.3s;
+}
+
+.pViajesNav a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.galeriaViajes li img{
+	display: block;
+	max-width: 100%;
+}
+
+.galeriaViajes{
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.pViajes .subrallado{
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+	box-shadow: 0 0px;
+}
+
+.galeriaItem{
+	width: 80%;
+	cursor: pointer;
+}
+
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100vh; /*Para que ocupe todo el ancho*/
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+}
+
+.modalImg{
+	width: 95%;
+}
+
+.modalBoton{
+	width: 50px;
+	height: 50px;
+	color: #000;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(255,255,255, 0.7);
+	border-radius: 50%;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	cursor: pointer;
+}
+
+.miVideo2{
+	width: 100%;
+}
+
+.mivideo2{
+	width: 100%;
+}
+
+.mivideodeltebre{
+	width: 100%;
+	transition: all 0.9s ease;
+}
+
+#volverInicio:hover{
+	background: #239FB8;
+	transition:  ease 0.3s;
+}
+
+.contenedorGeneral{
+	width: 90%;
+	margin: auto;
+}
+
+.contenedorGeneral section{
+	margin: 100px 0px 100px 0px;
+}
+
+h3{
+	font-size: 37px;
+}
+
+h3.contornoH3{
+	display: block;
+	background: #F8F8F8;
+	box-shadow: 0 1px #CCCCCC;
+	padding: 20px;
+}
+
+.subrallado{
+	color: #28B8D5;
+	display: inline-block;
+	box-shadow: 0 2px #28B8D5;
+}
+
+h4{
+	font-size: 20px;
+}
+
+h5{
+	font-size: 22px;
+}
+
+p{
+	font-size: 22px;
+	margin: 30px 0 10px 15px;
+}
+
+.iconosSection{
+	font-size: 27px;
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #28B8D5;
+	padding: 10px;
+	float: left;
+	margin: 30px 20px 5px 15px;
+}
+
+
+
+#discoverH{
+	padding: 5px;
+	text-decoration: none;
+	width: 100%;
+	padding: 15px;
+	display: block;
+	color: #000;
+	margin-top: 15px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #C9ECF3;
+	transition: all 1s;
+}
+
+#discoverH:hover{
+	background: #28B8D5;
+	transition: all 2s;
+}
+
+#quieroDescubrir{
+	width: 80%;
+	font-size: 17px;
+	text-align: center;
+	display: none;
+	margin: 0 auto;
+	height: 60px;
+}
+
+article#cambiarColor{
+	width: 90px;
+	background: rgba(255,255,255, 0.7);
+	height: 260px;
+	padding: 6px 20px 6px 6px;
+	text-align: center;
+	font-size: 13px;
+	position: fixed;
+	bottom: 50%;
+	left: -67px;
+	box-shadow: 0px 0px 5px grey;
+	transition: 0.3s all;
+}
+
+article#cambiarColor span{
+	font-size: 27px;
+	display: block;
+	transform: rotate(90deg);
+	/*transform: rotate(270deg);*/
+	position: absolute;
+	/*right: -6px;*/
+	right: 6px;
+	top: 45%;
+}
+
+article#cambiarColor:hover{
+	left: 0px;
+	transition: 0.3s all;
+}
+
+article#cambiarColor div{
+	width: 35px;
+	height: 35px;
+	margin: 12px auto;
+	border-radius: 5px;
+	transition: 0.3s all;
+	cursor: pointer;
+}
+
+article#cambiarColor div:hover{
+	width: 40px;
+	height: 40px;
+	transition: 0.3s all;
+}
+
+article#cambiarColor #ccRed{
+	background: red;
+}
+
+article#cambiarColor #ccGreen{
+	background: green;
+}
+
+article#cambiarColor #ccBlack{
+	background: black;
+}
+
+article#cambiarColor #ccYellow{
+	background: yellow;
+}
+
+
+/* ********************************************CONTENEDOR PARALLAX******************************************** */
+
+
+
+section#bloqueParallax{
+	background-image: url(../img/landscape0.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.classprueba{
+	background-image: url(../img/messi.jpg);
+}
+
+.contendorParallax{
+
+	background: rgba(255,255,255, 0.7);
+	padding: 40px;
+	width: 90%;
+	margin: 30px auto;
+}
+
+
+.contenedorViajes{
+	text-decoration: none;
+	color:#000;
+	width: 300px;
+	height: 150px;
+	cursor: pointer;
+	transition: all 2s;
+	display: inline-block;
+
+}
+
+.contenedorViajes:hover{
+	background: white;
+	box-shadow: 0 0 0 3px #28B8D5;
+	transition: all 2s;
+}
+
+.contenedorIcon{
+
+	display: block;
+	float: left;
+}
+
+.contenedorViajes2{
+
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+
+/* ********************************************CONTENEDOR OPINIONES******************************************** */
+
+.contenedorOpiniones ul{
+	list-style: none;
+	cursor: pointer;
+	background: #fff;
+}
+
+.contenedorOpiniones article{
+	background: #E8E8E8;
+	height: 100px;
+}
+
+
+.contenedorOpiniones article:hover{
+	background: #E0E0E0;
+}
+
+.colorSeleccionado{
+	background: red;
+}
+
+#pLiPrincipal{
+	font-size: 17px;
+	padding: 5% 0 0 30%;
+	margin: 0px;
+}
+
+#pLiSecundario{
+	font-size: 17px;
+}
+
+#pLiSecundario span.icon{
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+#pLiSecundario span.opinion  {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.submenu10{
+	box-shadow: 0 0 1px #000;
+}
+
+.contenedorOpiniones ul ul{
+	display: none;
+	background: #F4F4F4;
+	padding: 20px 5px 20px 0px;
+}
+
+.contenedorOpiniones img{
+	width: 60px;
+	border-radius: 100%;
+	float: left;
+	margin: 3% 0 0 7%;
+}
+
+/* ********************************************FOOTER******************************************** */
+
+footer{
+	text-align: center;
+	background: #1D1D1D;
+	color: #fff;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+#sectionsFooter{
+	display: flex;
+	margin: 10px auto;
+	width: 140px;
+
+}
+
+.iconosFooter{
+	width: 35px;
+	height: 35px;
+	background: red;
+	border-radius: 50%;
+	line-height: 37px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+.yt, .ins, .tw{
+	margin: 5px;
+}
+
+.yt{
+	background: red;
+	transition: all 0.5s;
+}
+
+.yt:hover{
+	background: #fff;
+	color: red;
+}
+
+.ins{
+	background: #BA5BDB;
+	transition: all 0.5s;
+}
+
+.ins:hover{
+	background: #fff;
+	color: #BA5BDB;
+}
+
+.tw{
+	background: #5356E7;
+	transition: all 0.5s;
+}
+
+.tw:hover{
+	background: #fff;
+	color: #5356E7;
+}
+
+#textoFinal{
+	display: block;
+	margin-top: 40px;
+	font-size: 13px;
+}
+
+
+
+
+/* ********************************************FORMULARIO******************************************** */
+
+body#bodyForm{
+	background: #F2F2F2;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrap{
+	width: 100%;
+	max-width: 500px;
+	padding: 40px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.contenedorFormulario{
+	width: 100%;
+	padding: 20px;
+}
+
+.contenedorFormulario label{
+	color: #346C7B;
+}
+
+.formulario{
+	width: 100%;
+	margin: auto;
+}
+
+.input-group{
+	position: relative;
+	margin-bottom: 32px;
+}
+
+/*Por cada input de tipo text,email,password, y que tengan la clase input-group se la 
+aplica lo siguiente*/
+
+.contenedorFormulario .formulario .input-group input[type="text"],
+.contenedorFormulario .formulario .input-group input[type="email"],
+.contenedorFormulario .formulario .input-group input[type="password"] {
+  font-size: 16px;
+  width: 100%;
+  outline: none; /*Especificación de border-bottom para algunos navegadores que 
+  no soportan border-bottom */
+  padding: 15px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #BBDEFB;
+}
+
+/*Cuando se haga focus y esté actuvo cada input de tipo text,email,password, y que tengan 
+la clase input-group se la aplica lo siguiente*/
+
+.contenedorFormulario .formulario .input-group input[type="text"]:focus, 
+.contenedorFormulario .formulario .input-group input[type="text"]:active,
+.contenedorFormulario .formulario .input-group input[type="email"]:focus,
+.contenedorFormulario .formulario .input-group input[type="email"]:active,
+.contenedorFormulario .formulario .input-group input[type="password"]:focus,
+.contenedorFormulario .formulario .input-group input[type="password"]:active {
+  outline: none;
+  border-bottom: 2px solid #28B8D5;
+}
+
+.contenedorFormulario .formulario .input-group input[type="text"].errorForm,
+.contenedorFormulario .formulario .input-group input[type="email"].errorForm,
+.contenedorFormulario .formulario .input-group input[type="password"].errorForm {
+  border-bottom: 2px solid #D32F2F;
+}
+.contenedorFormulario .formulario .input-group input[type="text"].errorForm + label,
+.contenedorFormulario .formulario .input-group input[type="email"].errorForm + label,
+.contenedorFormulario .formulario .input-group input[type="password"].errorForm + label {
+  color: #D32F2F;
+}
+
+.labelForm{
+	position: absolute;
+	top: 16px;
+	left: 0;
+	line-height: 16px;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.labelForm.desplazLabelForm {
+  top: -12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #B6B6B6;
+}
+
+.checkbox label, .radio label{
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	border-radius: 3px;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.checkbox label:hover, .radio label:hover{
+	background: #bbdefb;
+	
+}
+
+/*Con before accedemos a lo que está antes del label (en este caso
+la redonda y el cuadradito que hay antes del checkbox y el radio*/
+.checkbox label:before, .radio label:before{
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 15px;
+	border-radius: 50%;
+	background: none;
+	border: 2px solid #346C7B;
+}
+
+.contenedorFormulario .formulario .input-group.errorForm label {
+  color: #D32F2F;
+}
+.contenedorFormulario .formulario .input-group.errorForm label:hover {
+  background: rgba(211, 47, 47, 0.2);
+}
+.contenedorFormulario .formulario .input-group.errorForm label:before {
+  border: 2px solid #D32F2F;
+}
+
+.contenedorFormulario .formulario .input-group input[type="radio"],
+.contenedorFormulario .formulario .input-group input[type="checkbox"]{
+  display: none;
+}
+
+/*Cuando se clique en los radio y checkbox, el elemento que este antes de su label 
+(las redonditas) desaparecen*/
+.contenedorFormulario .formulario .input-group input[type="radio"]:checked + label:before,
+.contenedorFormulario .formulario .input-group input[type="checkbox"]:checked + label:before{
+  display: none;
+}
+
+.contenedorFormulario .formulario .input-group input[type="radio"]:checked + label,
+.contenedorFormulario .formulario .input-group input[type="checkbox"]:checked + label{
+  padding: 5px 15px;
+  background: #28B8D5;
+  border-radius: 3px;
+  color:#fff;
+}
+
+.contenedorFormulario .formulario .input-group input[type="checkbox"] + label:before{
+	border-radius: 3px;
+}
+
+input[type="submit"], input[type="button"]{
+	background: #28B8D5;
+	border-radius: 1px;
+	border: 3px solid #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+	background: #239FB8;
+}
+
+#pruebaForm{
+	background: red;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.contFormPreguntas{
+	display: block;
+}
+
+form p{
+	margin-bottom: 50px;
+}
+
+.contFormPreguntas label{
+	margin: 15px 0 15px 0;
+}
+
+.form1, .form2, .form3, .form4, .form5{
+	display: none;
+}
+
+
+
+.finalForm{
+	text-align: center;
+	display: none;
+}
+
+.finalForm hr{
+	color: #28B8D5; 
+	background-color: #28B8D5;
+	width: 60%;
+	margin: 30px auto;
+	height: 3px;
+}
+
+
+
+#imagenForm{
+	/*background-image: url(../img/formRoma.jpg);*/
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+#imagenForm2{
+	width: 90%;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: 15px auto;
+	/*background-image: url(../img/Ibizabarato.jpg);*/
+}
+
+#lugarFinalForm{
+	font-family: 'Dancing Script', cursive;
+	font-size: 45px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#bodyForm h1{
+	color: #A2D2DC;
+	text-align: center;
+	font-size: 65px;
+	transition: 0.5s all;
+
+}
+
+#volverInicio{
+	display: block;
+	background: red;
+	width: 25%;
+	height: 30px;
+	line-height: 30px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background: #28B8D5; 
+	transition:  ease 0.3s;
+}
+
+#volverInicio:hover{
+	background: #239FB8;
+	transition:  ease 0.3s;
+}
+
+
+
+
+/* ********************************************MEDIA******************************************** */
+
+@media (min-width: 200px){
+
+		#contenedorSlider h1{
+			text-shadow: 0 0 5px #000;
+		}
+
+		.galeriaItem{
+			width: 85%;
+			margin: 5px;
+		}
+	}
+
+	@media (min-width: 300px){
+		
+		.contenedorGeneral h1{
+			top: 7%;
+			font-size: 80px;
+		}
+
+		#cambiarColor{
+			display: none;
+			transition: all 0.7s;
+		}
+	}
+
+	@media (min-width: 400px){
+		.galeriaItem{
+			width: 80%;
+		}
+	}
+
+	@media (min-width: 450px){
+		#imagenForm2{
+			width: 90%;
+			height: 150px;
+		}
+	}
+
+	@media (min-width: 600px){
+		#contenedorSlider h1{
+			top: 7%;
+			font-size: 60px;
+		}
+	}
+
+	.pViajes h1{
+		font-size: 60px;
+		text-align: center;
+	}
+
+@media (min-width: 700px){
+	
+	#headerMenuLabel{
+		right: 10%;
+		transition: all 0.3s;
+	}
+
+	#contenedorSlider h1{
+		font-size: 80px;
+		text-shadow: 0 0 10px #000;
+	}
+	
+	#contenedorSlider h1{
+		left: 5%;
+	}
+
+	.galeriaItem{
+		width: 40%;
+	}
+
+	.modalImg{
+		width: 60%;
+	}
+
+	.mivideodeltebre{
+		width: 60%;
+	}
+
+	.contenedorOpiniones article{
+		height: 100px;
+		width: 250px;
+		box-shadow: 0 0 1px #000;
+	}
+
+	.submenu10{
+		display: flex;
+		box-shadow: 0 0 0px #000;
+	}
+
+	.contenedorOpiniones ul ul{
+		position: absolute;
+		width: 52%;
+		margin-left: 250px;
+		box-shadow: 0 0 1px #000;
+
+	}
+	
+	#pLiPrincipal{
+		font-size: 15px;
+		padding: 5% 0 0 35%;
+	}
+
+	#jrob{
+		margin-top: -100px;
+	}
+
+	#dtru{
+		margin-top: -200px;
+	}
+
+	#messi{
+		margin-top: -300px;
+	}
+
+	.contenedorOpiniones img{
+		width: 60px;
+		border-radius: 100%;
+		float: left;
+		margin: 3% 0 0 7%;
+	}
+
+	footer{
+		margin-top: 100px;
+	}	
+
+	.labelNavViajes{
+		display: none;
+	}
+
+	.pViajesNav{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: rgba(255,255,255, 0.8);
+		border: 0px;
+		margin: 20px 0px 0px 0px;
+		transition: 0.5s all;
+		text-align: center;
+	}
+
+	.pViajes p i{
+		font-style: italic;
+		font-size: 17px;
+	}
+
+	#inputNavViajes{
+		display: none;
+	}
+
+	#inputNavViajes:checked ~ .pViajesNav{
+		margin-left: 0px;
+		transition: 0.5s all;
+	}
+
+	.labelNavViajes{
+		color: #28B8D5;
+		font-size: 50px;
+		float: right;
+		margin-right: 20px;
+		cursor: pointer;
+		transition:  ease 0.3s;
+	}
+
+	.labelNavViajes:hover{
+		color: #239FB8;
+		transition:  ease 0.3s;
+	}
+
+	.pViajesNav ul{
+		display: flex;
+	}
+
+	.pViajesNav li{
+		width: 700px;
+		cursor: pointer;
+		height: 30px;
+		line-height: 30px;
+		background: #28B8D5; 
+		margin: 0px 5px 0px 5px;
+		transition:  ease 0.3s;
+	}
+
+	.pViajesNav a{
+		display: block;
+	}
+
+	#verMas{
+		width: 120px;
+	}
+
+	#verMas:hover{
+		width: 125px;
+		height: 32px;
+		line-height: 32px;
+		box-shadow: 0 0 5px #484848;
+		transition: all 0.1s;
+	}
+}
+
+
+@media (min-width: 850px){
+	
+	#bodyForm h1{
+		font-size: 90px;
+		transition: 0.5s all;
+	}
+}
+
+
+@media (min-width: 1000px){
+	
+	#headerMenu {
+		width: 900px;
+		margin: auto;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	
+	.contenedorNav{
+		transform: translateY(150%);
+		transition: all 0.3s;
+	}
+
+	.contenedorNav ul{
+		display: flex;
+		margin-top: 2px;
+	}
+
+	.contenedorNav ul li{
+		width: 33.33%;
+		height: 60px;
+		line-height: 60px;
+		margin: 0 10px 0 10px;
+		text-align: center;
+		background: rgba(0,0,0, 0.7);
+	}
+
+	.contenedorNav a{
+		display: block;
+		font-size: 20px;
+		transition: all 0.7s;
+	}
+
+	.contenedorNav a:hover{
+		background: rgba(255,255,255, 0.5);
+		transition: all 1s;
+	}
+	
+	#headerMenuLabel{
+		display: none;
+	}
+	
+	.formularioLStorage{
+		margin-right: 20%;
+	}
+
+	.contenedorGeneral{
+		width: 60%;
+	}
+
+	.contendorParallax{
+		display: flex;
+	}
+
+	.contenedorViajes{
+		margin-top: 90px;
+	}
+
+	.contenedorViajesPrincipal{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.contenedorOpiniones ul ul{
+		width: 40%;
+	}
+
+	#pLiSecundario{
+		height: 400px;
+	}
+
+	.contenedorGeneral h1{
+		font-size: 80px;
+	}
+
+	.contenedorNav ul ul {
+		position: absolute;
+		width: 33.3%;
+		margin-left: -70px;
+	}
+
+	.contenedorNav ul ul li{
+		clear: left;
+		width: 100%;
+		height: 55px;
+		line-height: 30px;
+		margin: 5px;
+		margin-left: 60px;
+		line-height: 55px;
+	}
+
+
+
+}
+
+@media (min-width: 1024px){
+	.galeriaItem{
+		width: 30%;
+		margin: 10px;
+	}
+}
+
+@media (min-width: 1280px){
+	#contenedorSlider h1{
+		font-size: 120px;
+		text-shadow: 0 0 10px #000;
+	}
+
+	.contenedorGeneral h1{
+		font-size: 120px;
+	}
+
+	#cambiarColor{
+		display: block;
+		transition: all 0.7s;
+	}
+
+	.contenedorNav ul ul li{
+		height: 60px;
+		line-height: 60px;
+	}
+}
+

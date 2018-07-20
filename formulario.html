@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Siempre Holidays - Formulario</title>
+	<meta name="keywords" content="viajes, mario, diana, siempre holidays, viaja, aventura, vacaciones, formulario, descubre">
+	<meta name="description" content="En Siempre Holidays te ayudamos en encontrar el destino perfecto para tus vacaciones. Haz el formulario y sorprendete.">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/logo.ico"/>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.version.3.3.1.js"></script>
+	
+</head>
+<body id="bodyForm">
+	
+	<h1>Siempre Holidays.</h1>
+
+	<a id="volverInicio" href="index.html">Ir al inicio</a>
+
+	<section class="contenedorFormulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="post">
+			
+			<div>
+				<div class="input-group">
+					<input type="text" id="nombreForm" name="nombre">
+					<label class="labelForm" for="nombre">Nombre:</label>
+				</div>
+
+				<div class="input-group">
+					<input type="email" id="emailForm" name="email">
+					<label class="labelForm" for="email">Correo:</label>
+				</div>
+
+				<div class="input-group">
+					<input type="password" id="passForm" name="pass">
+					<label class="labelForm" for="pass">Contraseña:</label>
+				</div>
+
+				<div class="input-group">
+					<input type="password" id="pass2Form" name="pass2">
+					<label class="labelForm" for="pass2">Repetir contraseña:</label>
+				</div>
+
+				<div class="input-group radio">
+					<input type="radio" name="sexo" id="hombre" value="Hombre" class="radioButtons">
+					<label for="hombre">Hombre</label>
+
+					<input type="radio" name="sexo" id="mujer" value="Mujer" class="radioButtons">
+					<label for="mujer">Mujer</label>
+				</div>
+
+				<div class="input-group checkbox">
+					<input type="checkbox" name="terminos" id="terminos" value="true">
+					<label for="terminos">Acepto los terminos y condiciones</label>
+				
+				</div>
+
+					<input type="submit" id="btn-submitForm" value="Ir al formulario">
+			</div>
+			</form>
+		</div>
+	</section>
+
+
+
+
+
+<!--Formularios preguntas-->
+
+
+
+
+
+	<section class="contenedorFormulario contFormPreguntas form1">
+		<div class="wrap">
+			<form action="" class="formulario frmPreguntas" name="formulario1" method="post">
+			
+				<p>¿Cuánto tiempo deseas irte?</p>
+				
+				<div>
+					<div class="input-group radio">
+						<input type="radio" name="opcion1" id="opcion1_1" value="opcion1_1" class="radioButtons">
+						<label for="opcion1_1">Fin de semana.</label><br>
+
+						<input type="radio" name="opcion1" id="opcion1_2" value="opcion1_2" class="radioButtons">
+						<label for="opcion1_2">1 semana.</label><br>
+
+						<input type="radio" name="opcion1" id="opcion1_3" value="opcion1_3" class="radioButtons">
+						<label for="opcion1_3">Más de 2 semanas.</label>
+					</div>
+						<input type="button" id="btn_buttonForm1" value="Siguiente">
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section class="contenedorFormulario contFormPreguntas form2">
+		<div class="wrap">
+			<form action="" class="formulario frmPreguntas" name="formulario2" method="post">
+			
+				<p>¿Cuál es el presupuesto que dispones para gastar?</p>
+				
+				<div>
+					<div class="input-group radio">
+						<input type="radio" name="opcion2" id="opcion2_1" value="opcion2_1" class="radioButtons">
+						<label for="opcion2_1">Menos de 500 €.</label><br>
+
+						<input type="radio" name="opcion2" id="opcion2_2" value="opcion2_2" class="radioButtons">
+						<label for="opcion2_2">Entre 500 € y 1000 €.</label><br>
+
+						<input type="radio" name="opcion2" id="opcion2_3" value="opcion2_3" class="radioButtons">
+						<label for="opcion2_3">Entre 1000 € y 2500 € (o más).</label>
+					</div>
+						<input type="button" id="btn_buttonForm2" value="Siguiente">
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section class="contenedorFormulario contFormPreguntas form3">
+		<div class="wrap">
+			<form action="" class="formulario frmPreguntas" name="formulario3" method="post">
+			
+				<p>¿Prefieres ir a un lugar con playa o a la ciudad?</p>
+				
+				<div>
+					<div class="input-group radio">
+						<input type="radio" name="opcion3" id="opcion3_1" value="opcion3_1" class="radioButtons">
+						<label for="opcion3_1">¡Quiero ir a la playa!</label><br>
+
+						<input type="radio" name="opcion3" id="opcion3_2" value="opcion3_2" class="radioButtons">
+						<label for="opcion3_2">Prefiero ciudad, me gusta más el asfalto</label>
+					</div>
+						<input type="button" id="btn_buttonForm3" value="Siguiente">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="contenedorFormulario contFormPreguntas form4">
+		<div class="wrap">
+			<form action="" class="formulario frmPreguntas" name="formulario4" method="post">
+			
+				<p>¿Prefieres fiesta o tranquilidad?</p>
+				
+				<div>
+					<div class="input-group radio ">
+						<input type="radio" name="opcion4" id="opcion4_1" value="opcion4_1" class="radioButtons">
+						<label for="opcion4_1">¡Quiero ir de fiesta sin duda!</label><br>
+
+						<input type="radio" name="opcion4" id="opcion4_2" value="opcion4_2" class="radioButtons">
+						<label for="opcion4_2">Predomino más la tranquilidad que la fiesta.</label>
+
+						<input type="radio" name="opcion4" id="opcion4_3" value="opcion4_3" class="radioButtons">
+						<label for="opcion4_3">Prefiero tener variedad de actividades (senderismo, excursiones, etc).</label>
+					</div>
+						<input type="button" id="btn_buttonForm4" value="Siguiente">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="contenedorFormulario contFormPreguntas form5">
+		<div class="wrap">
+			<form action="" class="formulario frmPreguntas" name="formulario5" method="post">
+			
+				<p>¿Cuál es tu intención al hacer el viaje?</p>
+				
+				<div>
+					<div class="input-group radio">
+						<input type="radio" name="opcion5" id="opcion5_1" value="opcion5_1" class="radioButtons">
+						<label for="opcion5_1">Voy con pareja, quiero algo romantico.</label><br>
+
+						<input type="radio" name="opcion5" id="opcion5_2" value="opcion5_2" class="radioButtons">
+						<label for="opcion5_2">Quiero ver arte, ir al cine, de compras, etc.</label>
+
+						<input type="radio" name="opcion5" id="opcion5_3" value="opcion5_3" class="radioButtons">
+						<label for="opcion5_3">Me gustan las ciudades antiguas, con ambiente moderno</label>
+					</div>
+						<input type="button" id="btn_buttonForm5" value="Siguiente">
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section class="contenedorFormulario finalForm">
+		<div class="wrap">
+			<div id="imagenForm"></div>
+
+			<p>Tus <span class="subrallado">vacaciones</span> ideales se encuentran en: </p>
+
+			<div id="lugarFinalForm"></div>
+			<br><hr>
+			
+			<br><br>Teniendo en cuenta el presupuesto que nos indicas, el lugar ideal donde te puedes hospedar es:
+			<div id="imagenForm2"></div>
+		</div>
+	</section>
+	
+<footer>
+	
+	<div class="contenedorGeneral">
+		¡Para seguir nuestro dia a dia seguidnos en nuestras redes sociales!
+		
+		<br><br><i>Redes sociales de Mario:</i>
+		<div id="sectionsFooter">
+			<a href="https://www.youtube.com/channel/UC0gn0DXhL-nY9u9YZ37NSMQ?view_as=subscriber" target="blank" class="iconosFooter yt"><span class="icon-youtube"></span></a>
+
+			<a href="https://www.instagram.com/marioraps/" target="blank" class="iconosFooter ins"><span class="icon-instagram"></span></a>
+
+			<a href="https://twitter.com/MarioRaps" target="blank" class="iconosFooter tw"><span class="icon-twitter"></span></a>
+		</div>
+
+		<br><br><i>Redes sociales de Diana:</i>
+		<div id="sectionsFooter">
+			<a href="https://www.youtube.com/channel/UCHPiQOABL_rnKfwSw4pKm7g" target="blank" class="iconosFooter yt"><span class="icon-youtube"></span></a>
+
+			<a href="https://www.instagram.com/diiianacovaci/" target="blank" class="iconosFooter ins"><span class="icon-instagram"></span></a>
+
+			<a href="https://twitter.com/dianascovaci" target="blank" class="iconosFooter tw"><span class="icon-twitter"></span></a>
+		</div>
+		
+	</div>
+
+
+	
+	<span id="textoFinal">Esta página está creada con motivos de estudio y sin ánimo de lucro. <br>Mario García Lucas - 2018</span>	
+</footer>
+
+
+<script src="js/formulario.js"></script>
+<script src="js/formulario2.js"></script>
+
+</body>
+</html>
