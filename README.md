@@ -11,6 +11,8 @@ Cabe decir, que la web es responsive, ya que la misma se adapta dependiendo del 
 
 Entre otras muchas cosas, en el apartado Descubre tus vacaciones te direcciona a realizar un formulario, primero de registro, con comprobaciones específicas de cada apartado. En el formulario principal se pide que el usuario acceda a la web como si de una página clásica de registro se tratase.
 
+Una vez realizado este registro, la misma página web nos redirige a un cuestionario más especifico en el que se generan una serie de preguntas donde el usuario especifica sus preferencias entorno a viajar. Según las características escogidas por el usuario, se genera un algoritmo que finalmente muestra un destino adaptado a las respuestas que se han indicado previamente.
+
 # Implementaciones:
 
 -	Se he diseñado la web utilizando maquetación **CSS3**.
