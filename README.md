@@ -1,7 +1,7 @@
 # Siempre Holidays.
 - Link del sitio web: https://mnoventa.github.io/SiempreHolidays/  o http://www.siempreholidays.ga/
 
-Siempre Holidays es un proyecto basado en sitio web tipo blog creado a petición de una de las asignaturas que he impartido en el campus virtual de la **Universidad de San Valero**. De forma amena, explico todos los viajes que hemos realizado mi pareja y yo.
+Siempre Holidays es un proyecto basado en sitio web tipo blog creado a petición de una de las asignaturas que he impartido en el campus virtual de la **Universidad de San Valero**. De forma amena, explico todos los viajes que hemos realizado mi pareja y yo, interactuando con el usuario.
 
 # Explicación.
 
@@ -15,11 +15,11 @@ Una vez realizado este registro, la misma página web nos redirige a un cuestion
 
 # Implementaciones:
 
+-	Desarrollo en **Javascript** y **JQuery** sin la utilización de ningún plugin.
 -	Se he diseñado la web utilizando maquetación **CSS3**.
 -	El sitio web es **responsive** y adaptado a cualquier tipo de tamaño de pantalla.
--	Las imágenes que se muestran están comprimidas y sin derechos de autor.
 -	Se ha implementado **HTML5**.
--	Desarrollo en **Javascript** y **JQuery** sin la utilización de ningún plugin.
--	Se han apartado comentarios en los documentos .HTML, .CSS, .JS para hacer más clara su comprensión.
--	*En la página principal se ha colocado un botón que permite volver a la parte superior de la misma.*
 -	Implementación de **LocalStorage**.
+-	Se han apartado comentarios en los documentos .HTML, .CSS, .JS para hacer más clara su comprensión.
+-	Las imágenes que se muestran están comprimidas y sin derechos de autor.
+-	*En la página principal se ha colocado un botón que permite volver a la parte superior de la misma.*
