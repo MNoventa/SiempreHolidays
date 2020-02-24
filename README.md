@@ -1,5 +1,5 @@
 # Siempre Holidays.
-- Link del sitio web: https://mnoventa.github.io/SiempreHolidays/  o http://www.siempreholidays.ga/
+- Link del sitio web: https://mnoventa.github.io/SiempreHolidays/
 
 Siempre Holidays es un proyecto basado en sitio web tipo blog creado a petición de una de las asignaturas que he impartido en el campus virtual de la **Universidad de San Valero**. De forma amena, explico todos los viajes que hemos realizado mi pareja y yo, interactuando con el usuario.
 
